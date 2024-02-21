@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #box{
+            height: 300px;
+            width: 300px;
+            background: conic-gradient(violet,indigo,blue,green,yellow,orange,red,violet);
+            border-radius: 50%;
+            animation: anime 2s linear  infinite;
+            border:3px solid black;
+        }
+        @keyframes anime {
+            100%{
+                rotate: 360deg;
+            }
+        }
+        #box2{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            border-radius: 50%;
+            background: conic-gradient(violet,indigo,yellow,orange,red,blue,green,violet);
+            border: 2px solid black;
+            animation: anm 0.2s linear infinite;
+        }
+        @keyframes anm {
+            100%{
+                rotate: 360deg;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="box"></div><br>
+    <div id="box2"></div>
+</body>
+</html>
