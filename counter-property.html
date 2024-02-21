@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       html, body{
+        counter-reset: myCount;
+       }
+       h1::before{
+        content: counter(myCount)". ";
+        counter-increment: myCount;
+       }
+    </style>
+    <title>Counter-Property</title>
+</head>
+<body>
+    <h1>Sayyad</h1>
+    <h1>Nawab</h1>
+    <h1>Nazeer</h1>
+    <h1>Burair</h1>
+    <h1>Jafri</h1>
+</body>
+</html>
